@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - prints numbers in base 10
  * Description: all base 10 single digit
@@ -13,6 +14,7 @@ int main(void)
 		putchar(x);
 		x++;
 	}
-	putchar("\n");
+
+	putchar('\n');
 	return (0);
 }
