@@ -14,8 +14,6 @@ int main(void)
 		putchar(x);
 		x++;
 	}
-	putchar('\n');
-	return (0);
 
 	char y = 'A';
 
