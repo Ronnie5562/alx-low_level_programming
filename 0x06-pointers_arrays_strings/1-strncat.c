@@ -1,4 +1,4 @@
-nclude "main.h"
+include "main.h"
 
 /**
  * _strncat - joins two strimg with n bytes
