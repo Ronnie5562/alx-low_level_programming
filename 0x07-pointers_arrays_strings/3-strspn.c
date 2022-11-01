@@ -11,22 +11,25 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int bytes = 0;
-	int i;
+	int i = 0;
+	int j = 0;
+	int bytes = 0;
+	char *str1, *str2;
 
-	while (*s)
+	str1 = s;
+	str2 = accept;
+
+	while (str1[i] != '\0')
 	{
-		for (i = 0; accept[i]; i++)
+		while (str2[j] != '\0')
 		{
-			if (*s == accept[i])
+			if (str2[j] == str1[i])
 			{
 				bytes++;
 				break;
 			}
-			else if (accept[i + 1] == '\0')
-				return (bytes);
+			j++;
 		}
-		s++;
 	}
 	return (bytes);
 }
