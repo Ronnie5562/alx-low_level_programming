@@ -30,6 +30,11 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			j++;
 		}
+		if (s[i] != accept[j])
+		{
+			break;
+		}
+		i++;
 	}
 	return (bytes);
 }
