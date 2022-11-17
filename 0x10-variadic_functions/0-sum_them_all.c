@@ -5,13 +5,14 @@
  * @n: numbers of paramrters.
  * @...:indicates infinite number of parameters.
  *
- * Return: sum of all its parameters.
+ * Return: 0 if n ==0; else - sum of all its parameters.
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list(ap);
-	va_start(ap, n);
+	va_list ap;
 	int i, sum = 0;
+
+	va_start(ap, n); 
 
 	for (i = 0; i < n; i++)
 	{
