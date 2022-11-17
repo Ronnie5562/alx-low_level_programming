@@ -4,6 +4,7 @@
  * sum_them_all - a function that returns the sum of all its parameters.
  * @n: numbers of paramrters.
  * @...:indicates infinite number of parameters.
+ *
  * Return: sum of all its parameters.
  */
 int sum_them_all(const unsigned int n, ...)
@@ -16,6 +17,8 @@ int sum_them_all(const unsigned int n, ...)
 	{
 		sum += va_arg(ap, int);
 	}
+
 	va_end(ap);
+
 	return (sum);
 }
