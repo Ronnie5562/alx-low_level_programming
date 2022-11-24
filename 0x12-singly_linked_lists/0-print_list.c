@@ -3,9 +3,9 @@
 
 /**
  * print_list - Prints all the elements of a list_t list.
- * @h: The list_t list.
+ * @h: pointer to a linked list.
  *
- * Return: The number of nodes in h.
+ * Return: size_t, number of nodes
  */
 
 size_t print_list(const list_t *h)
