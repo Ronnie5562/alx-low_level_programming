@@ -1,9 +1,3 @@
-; My comments: It is so fun to write in assembly language
-; File: 101-hello_holberton.asm
-; Auth: Firdaus H. Salim
-; Desc: 64-bit assembly program that prints
-;       Hello, Holberton followed by a new line.
-
 extern printf
 
 section .text
