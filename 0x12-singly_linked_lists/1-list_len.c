@@ -1,9 +1,8 @@
 #include "lists.h"
 
 /**
- * list_len - count length of a linked list
- * @h: pointer to a link list
- * @length: a counter for size_t
+ * list_len - returns the length of a linked list
+ * @h: pointer to a link list*
  *
  * Return: size_t, length
  */
